@@ -1,0 +1,104 @@
+
+.box1{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    background-size: cover;
+    background-position: center;
+    /* background-image: url(./images/mustang_1.jpg); */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url(./images/mustang_1.jpg);
+    width: 100%;
+}
+/* .box2{
+    padding: 100px 0 300px 0;
+} */
+.box1 h1{
+    font-size: 100px;
+}
+.box1 h2{
+    margin-top: 50px;
+    font-size: 120px;
+    
+}
+.box1 h3{
+    font-size: 50px;
+    margin-top: 10px;
+}
+.box1 a{
+    
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    padding: 15px 60px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.box2 p{
+    font-size: 40px;
+}
+.box4{
+    margin-top: 100px;
+}
+.icon{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color: green;
+    font-size: 70px;
+    padding-right: 30px;
+}
+.icon a{
+    color: green;
+}
+@media (min-width: 425px) and (max-width: 768px) {
+    .box1{
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url(./images/mustang_1.jpg);
+
+    }
+    .box1 h1{
+        font-size: 30px;
+    }
+    .box2 h2{
+        font-size: 30px;
+        
+    }
+    .box2 h3{
+        font-size: 20px;
+    }
+    .box2 p{
+        font-size: 21px;
+    }
+    
+}
+
+
+.call-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #FFAA33, #FFA500);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5); }
+  70% { box-shadow: 0 0 0 15px rgba(255, 0, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+}
+
+
+.call-btn:hover {
+  transform: scale(1.05);
+  background: blue;
+}
